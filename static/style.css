@@ -1,0 +1,405 @@
+.navbar{
+    /*border: 2px solid red;*/
+    display: flex;
+    flex-direction: row-reverse;
+    margin: -8px;
+    background-color: #feffa26e;
+}
+
+.navlist{
+    /*border: 2px solid black;*/
+    display: flex;
+    margin-right: 8%;
+}
+
+.navlist li{
+    padding: 0px 20px;
+    list-style: none;
+}
+
+.navlist li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navlist li a:hover{
+      color: black;
+      cursor: pointer;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-top: 0.5%;
+    /*border: 2px solid black;
+    background: #ced9c84a*/
+}
+
+.section1{
+    display: flex;
+}
+
+.heading1{
+    padding-left: 5%;
+    font-size: 70px;
+}
+
+.grow{
+    color: #e5712c;;
+}
+
+.visit{
+    color: #6e7848;
+    font-style: italic;
+}
+
+.paragraph{
+    font-size: 29px;
+    text-align: center;
+    padding-top: 9%;
+    width: 100%;
+}
+
+.section2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.section3{
+    display: flex;
+}
+
+.images{
+    max-width: 100%;
+    height: auto;
+}
+
+#btn{
+    background-color: #bab3a7;
+    width: 9%;
+    height: 18%;
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+#btn:hover{
+    background: transparent;
+    color: violet';
+}
+
+.Cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 41px 105px;
+    margin-top: 50px;
+}
+
+.cards{   
+    margin: 13px;
+    width: 30%;
+    padding: 5px;
+    text-align: center;
+    color: #934a0b;
+    background-color: #7fb1c04a;
+    border-radius: 40px;
+    /*border: 2px solid black;*/
+}
+
+.imagecard{
+    border: 2px solid red;
+    border-radius: 165px;
+    max-width: 100%;
+    height: auto;
+}
+
+footer{
+    font-size: 20px;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+.contact{
+    text-align: center;
+    background: #e9d1f321;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    margin-left: 36%;
+    font-size: 22px;
+    width: 32%;
+}
+
+.btn{
+    font-size: 20px;
+    /* background: transparent; */
+    padding: 2px;
+    margin: 10px;
+}
+
+.btn:hover{
+    background: transparent;
+    color: red;
+    cursor: pointer;
+}
+
+/*Navbar Media Query*/
+@media (max-width: 400px) and (min-width: 305px){
+    .navlist li a{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 305px) and (min-width: 283px){
+    .navlist{
+        margin-right: 0px;
+    }
+    .navlist li a{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 283px) and (min-width: 230px){
+    .navlist li{
+        padding: 0px 14px;
+    }
+    .navlist li a{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 230px) and (min-width: 200px){
+    .navlist li{
+        padding: 0px 10px;
+    }
+    .navlist li a{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 200px) and (min-width: 150px){
+    .navbar{
+        height: 121px;
+        padding: 18px;
+    }
+    .navlist{
+        flex-direction: column;
+        margin: 0px;
+    }
+    .navlist li{
+        margin: 5px;
+    }
+}
+
+@media (max-width: 150px) and (min-width: 125px){
+    .navlist li{
+        margin: 3px 13px;
+    }
+}
+
+@media (max-width: 125px) and (min-width: 100px){
+    .navlist li{
+        margin: 3px 3px;
+    }
+}
+
+/*Heading and Button Media Query*/
+@media (max-width: 1170px) and (min-width: 975px){
+    .heading1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 975px) and (min-width: 777px){
+    .heading1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width:777px) and (min-width:720px){
+      .heading1{
+          font-size: 41px;
+      }
+}
+
+@media (max-width:720px) and (min-width:600px){
+            .heading1{
+                 font-size: 35px;
+             }
+             #btn{
+                width: 17%;
+            }
+}
+
+@media (max-width: 500px) and (min-width: 400px){
+    .heading1{
+        font-size: 40px;
+    }
+    #btn{
+        width: 15%;
+    }
+}
+
+@media (max-width: 400px) and (min-width: 300px){
+    .heading1{
+        font-size: 32px;
+    }
+    #btn{
+        width: 18%;
+        height: 25%;
+    }
+}
+
+@media (max-width: 300px) and (min-width: 200px){
+    .heading1{
+        font-size: 20px;
+    }
+    #btn{
+    width: 24%;
+    height: 30%;
+    font-size: 12px;
+    }
+}
+
+@media (max-width: 200px) and (min-width: 100px){
+    .heading1{
+        font-size: 15px;
+    }
+    #btn{
+        width: 24%;
+        height: 25%;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .section1{
+        flex-wrap: wrap;
+    }
+
+    .section2{
+        flex-wrap: wrap;
+    }
+
+    .section3{
+        flex-wrap: wrap;
+    }
+}
+
+/*Images Media Query*/
+@media  (max-width:600px) and (min-width:440){
+    .images{
+        margin-left: 85px;
+    }
+}
+
+/*Cards Media Query*/
+
+@media (max-width: 1310px) and (min-width: 1039px){
+    .Cards{
+        padding: 0px;
+    }
+    .cards{
+        margin: 12px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 1039px) and (min-width: 800px){
+    .Cards{
+        padding: 0px;
+    }
+
+    .cards{
+        padding: 0px;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 600px){
+    .cards{
+        width: 25%;
+        font-size: 14px;
+    }
+    .Cards{
+        justify-content: center;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 200px){
+    .cards{
+        width: 100%;
+        font-size: 15px;
+        padding: 0px;
+    }
+    .Cards{
+        padding: 0px;
+    }
+}
+
+@media (max-width: 200px) and (min-width: 100px){
+    .cards{
+        width: 100%;
+        font-size: 10px;
+        padding: 0px;
+    }
+    .Cards{
+        padding: 0px;
+    }
+}
+
+/*Contact Media Query*/
+@media (max-width: 600px) and (min-width: 300px){
+    .input{
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 300px) and (min-width: 200px){
+    .input{
+        width: 60%;
+        margin-left: 20%;
+        font-size: 15px;
+    }
+    #detail{
+        height: 60px;
+    }
+}
+
+@media (max-width: 200px) and (min-width: 100px){
+    .input{
+        width: 60%;
+        margin-left: 20%;
+        font-size: 10px;
+    }
+    .btn{
+        font-size: 12px;
+    }
+    .contact{
+        font-size: 10px;
+    }
+}
+
+/*Footer Media Query*/
+@media (max-width: 280px) and (min-width: 100px){
+    footer{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 195px) and (min-width: 152px){
+    footer{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 152px) and (min-width: 100px){
+    footer{
+        font-size: 7px;
+    }
+}

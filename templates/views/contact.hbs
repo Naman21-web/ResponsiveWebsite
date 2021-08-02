@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>header}}
+
+<body>
+
+    {{>navbar}}
+
+    <div class="contact">
+        <h1>Contact Us</h1>
+
+        <form action="/contact" method="POST">
+            <input type="text" name="name" id="name" class="input" placeholder="Enter your name">
+            <input type="text" name="email" id="email" class="input" placeholder="Enter your email">
+            <input type="text" name="phoneno" id="phoneno" class="input" placeholder="Enter your phoneno">
+            <textarea name="detail" id="detail" cols="30" rows="5" class="input"
+                placeholder="More About You"></textarea>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+    {{>footer}}
+
+</body>
+
+</html>
